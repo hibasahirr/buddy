@@ -1,7 +1,7 @@
-
+# buddy
 <p align="center"><img src="./img.png" alt="Project Banner" width="100%"></p>
 
-[sipbuddy] 🎯
+SipBuddy 🎯
 Basic Details
 Team Name: [beto]
 
@@ -9,44 +9,70 @@ Team Members: [Hiba sahir MAMO ]
 
 Hosted Project Link: [https://buddy-black.vercel.app/]
 
-Project Description: [A productivity-focused hydration tracker designed for 8-hour workdays. To build consistent habits, the app features 7 daily levels, each with two stages. Users must upload a real-time photo of themselves drinking water to silence the scheduled alarms, ensuring accountability through "proof of hydration" before moving to the next level.]
 
-The Problem & Solution: [Sedentary professionals working 7–8 hour shifts often suffer from "dehydration amnesia," where high-intensity tasks lead them to neglect basic water intake. Standard health apps fail to solve this because their notifications are easily dismissed or snoozed without the user actually drinking anything. This leads to a cycle of midday fatigue, reduced cognitive focus, and long-term health issues, as there is no physical accountability or incentive to follow through with the reminder. This application solves the accountability gap by introducing a "proof of hydration" mechanism within a structured 7-level workday framework. By requiring a real-time photo upload to silence alarms, the app forces a physical break from work to ensure the hydration task is actually completed. This gamified, two-stage-per-level approach transforms a repetitive habit into a series of achievable milestones, ensuring workers maintain optimal hydration levels and mental clarity from the start of their shift to the finish.]
+Project Description:
+SipBuddy is a gamified hydration tracking web application designed to transform water intake into an engaging daily mission. Using a level-based system and interactive verification, it ensures users stay hydrated through a structured and motivating experience.
+
+The Problem & Solution:
+Many people struggle to maintain consistent hydration due to forgetfulness or lack of motivation. SipBuddy solves this by gamifying the process—dividing the daily intake into 7 progressive levels with mandatory cooldown periods and an AI-simulated "Live Verify" mechanism that requires photographic proof to stop hydration alarms.
 
 Technical Details
-Technologies Used: [Node,javascript,html]
+Technologies Used:
+- **Frontend**: React 19, Vite, TypeScript
+- **Styling**: Vanilla CSS, Framer Motion (Animations), Lucide React (Icons)
+- **Verification**: Web Camera API (File Upload/Capture), Web Audio API (Alarm System)
+- **Data Persistence**: LocalStorage API
 
 Features
-[Conditional Alarm Logic: A trigger mechanism that prevents the alarm from being dismissed until a photo file path is successfully returned by the camera API.
+1. **Gamified 7-Level Mission**: A daily quest where users must unlock 7 distinct levels, each representing a hydration milestone.
+2. **AI Scanning Simulation**: A "Live Verify" feature that simulates AI detection of hydration activity using uploaded/captured photos with real-time status updates and visual feedback.
+3. **Smart Alarm & Cooldown System**: Integrated auditory and visual alarms that activate when it's time to drink, coupled with mandatory cooldown periods between stages to ensure optimal water absorption.
+4. **Interactive Analytics Dashboard**: A comprehensive view of the user's progress, showing daily stats, level completion status, and hydration history.
 
-Sequential State Tracking: A nested logic system that manages the "7 Levels, 2 Stages" progress, ensuring users cannot skip ahead without completing the current step.
+Implementation
+Installation:
+```bash
+npm install
+```
 
-Background Task Scheduling: Implementation of a background service (like WorkManager or NSTimer) to trigger precise hydration alerts across a full 8-hour work shift.
-
-Media Intent Integration: Code that interfaces with the device hardware to launch the camera, capture "proof of hydration," and store the image metadata as completion data.]
-
-
+Run:
+```bash
+npm run dev
+```
 
 Project Documentation
-Screenshots: [https://github.com/hibasahirr/buddy/blob/main/Screenshot%202026-02-14%20084805.png
-https://github.com/hibasahirr/buddy/blob/main/Screenshot%202026-02-14%20085202.png
-https://github.com/hibasahirr/buddy/blob/main/down.mp4]
+Screenshots:
+- ![Dashboard Overview](./Screenshot 2026-02-14 102036.png
+)
+  *Main Dashboard showing progressive levels and daily progress.*
+- ![Live Verification](./Screenshot 2026-02-14 102049.png
+)
+  *The "Live Verify" interface with AI scanning simulation and camera integration.*
+- ![Analytics View](./Screenshot 2026-02-14 102115.png
+)
+  *Detailed analytics showing hydration history and mission statistics.*
 
+Diagrams:
 
+System Architecture:
+[INSERT ARCHITECTURE DIAGRAM HERE]
 
-Project Demo
-Video: [https://github.com/hibasahirr/buddy/blob/main/down.mp4]
+Workflow:
+[INSERT WORKFLOW DIAGRAM HERE]
 
 AI Tools Used
-Tool: antigravity
-Purpose: [Explain usage: e.g., debugging, boilerplate, README generation]
-Prompts: [Insert 2-3 example prompts used during the hack]
+Tool: Cursor
+Purpose: Used as the primary IDE for developing the entire application, including boilerplate generation, implementing core hydration logic via state management, creating the complex CSS-based animations, and generating this documentation.
+Prompts:
+- "Create a gamified hydration dashboard using Framer Motion with 7 levels that unlock sequentially."
+- "Implement a simulated AI scanning overlay for a camera verification component in React."
+- "Design a sleek, sky-blue glassmorphism theme with a custom alarm system using Web Audio API."
 
 Team Contributions
+- [hiba]: Frontend Development & UI/UX Design
+- [hiba]: Core Logic & Verification System
+
 License
 This project is licensed under the MIT License.
 
 Made with ❤️ at TinkerHub
-Final Instruction:
-
-

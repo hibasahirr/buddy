@@ -28,33 +28,17 @@ Media Intent Integration: Code that interfaces with the device hardware to launc
 
 
 Project Documentation
-Screenshots: [Add 3 placeholders with captions]
+Screenshots: [https://github.com/hibasahirr/buddy/blob/main/Screenshot%202026-02-14%20084805.png
+https://github.com/hibasahirr/buddy/blob/main/Screenshot%202026-02-14%20085202.png
+https://github.com/hibasahirr/buddy/blob/main/down.mp4]
 
-Diagrams:
 
-System Architecture:
-
-Workflow:
-
-[IF BACKEND DETECTED]
-
-API Documentation
-Base URL: [URL]
-
-Endpoints: [List actual GET/POST endpoints found in code with params/response]
-
-[IF MOBILE APP DETECTED]
-
-Mobile Specifics
-App Flow Diagram:
-
-Installation: [APK/IPA/Build instructions]
 
 Project Demo
-Video: [Link]
+Video: [https://github.com/hibasahirr/buddy/blob/main/down.mp4]
 
 AI Tools Used
-Tool: Cursor
+Tool: antigravity
 Purpose: [Explain usage: e.g., debugging, boilerplate, README generation]
 Prompts: [Insert 2-3 example prompts used during the hack]
 
@@ -65,4 +49,4 @@ This project is licensed under the MIT License.
 Made with ❤️ at TinkerHub
 Final Instruction:
 
-Produce the full Markdown code now. Use [INSERT HERE] only for personal info (names, links, images). Generate all technical sections (commands, stack, features, API) based strictly on my code.
+
